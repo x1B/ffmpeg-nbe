@@ -1,0 +1,192 @@
+/**
+ * Use this to declare user-defined edge types.
+ */
+/* line 88, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .port.AUDIO > i {
+  background: #c3669c;
+}
+/* line 93, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .node.edge.AUDIO {
+  background: -moz-linear-gradient(left top, #c3669c 0%, #8c3768 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #c3669c), color-stop(100%, #67294d));
+}
+/* line 99, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .node.edge.AUDIO.ping {
+  animation-name: edge-ping-ffmpeg-app-AUDIO;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  -webkit-animation-name: edge-ping-ffmpeg-app-AUDIO;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+}
+/* line 109, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .link.AUDIO {
+  stroke: #c3669c;
+}
+/* line 111, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .link.AUDIO.selected {
+  stroke: #e0afcb;
+}
+/* line 119, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.highlight-AUDIO .port:not(.AUDIO) > i,
+.graph.ffmpeg-app.highlight-AUDIO .node.edge:not(.AUDIO) {
+  background: #646464;
+}
+/* line 122, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.highlight-AUDIO .link:not(.AUDIO) {
+  stroke: #646464;
+}
+/* line 129, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.hide-AUDIO .link.AUDIO {
+  display: none;
+}
+/* line 132, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.hide-AUDIO .port.AUDIO {
+  display: none;
+}
+/* line 135, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.hide-AUDIO .edge.AUDIO {
+  display: none;
+}
+
+@keyframes edge-ping-ffmpeg-app-AUDIO {
+  /* line 69, ../../../scss/_nbe_variables.scss */
+  from {
+    box-shadow: 0px 0px 5px 3px #333333, 0px 0px 0px 0px transparent, 4px 4px 4px #202020;
+  }
+
+  /* line 70, ../../../scss/_nbe_variables.scss */
+  20% {
+    box-shadow: 0px 0px 12px 3px #333333, 0px 0px 16px 3px #c3669c, 4px 4px 4px #202020;
+  }
+
+  /* line 71, ../../../scss/_nbe_variables.scss */
+  to {
+    box-shadow: 0px 0px 18px 3px #333333, 0px 0px 24px 3px transparent, 4px 4px 4px #202020;
+  }
+}
+
+@-webkit-keyframes edge-ping-ffmpeg-app-AUDIO {
+  /* line 75, ../../../scss/_nbe_variables.scss */
+  from {
+    box-shadow: 0px 0px 5px 3px #333333, 0px 0px 0px 0px transparent, 4px 4px 4px #202020;
+  }
+
+  /* line 76, ../../../scss/_nbe_variables.scss */
+  20% {
+    box-shadow: 0px 0px 12px 3px #333333, 0px 0px 16px 3px #c3669c, 4px 4px 4px #202020;
+  }
+
+  /* line 77, ../../../scss/_nbe_variables.scss */
+  to {
+    box-shadow: 0px 0px 18px 3px #333333, 0px 0px 24px 3px transparent, 4px 4px 4px #202020;
+  }
+}
+
+/* line 88, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .port.VIDEO > i {
+  background: #f5c680;
+}
+/* line 93, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .node.edge.VIDEO {
+  background: -moz-linear-gradient(left top, #f5c680 0%, #ee9c21 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #f5c680), color-stop(100%, #cc8010));
+}
+/* line 99, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .node.edge.VIDEO.ping {
+  animation-name: edge-ping-ffmpeg-app-VIDEO;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  -webkit-animation-name: edge-ping-ffmpeg-app-VIDEO;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+}
+/* line 109, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .link.VIDEO {
+  stroke: #f5c680;
+}
+/* line 111, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app .link.VIDEO.selected {
+  stroke: #fcf0df;
+}
+/* line 119, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.highlight-VIDEO .port:not(.VIDEO) > i,
+.graph.ffmpeg-app.highlight-VIDEO .node.edge:not(.VIDEO) {
+  background: #646464;
+}
+/* line 122, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.highlight-VIDEO .link:not(.VIDEO) {
+  stroke: #646464;
+}
+/* line 129, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.hide-VIDEO .link.VIDEO {
+  display: none;
+}
+/* line 132, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.hide-VIDEO .port.VIDEO {
+  display: none;
+}
+/* line 135, ../../../scss/_nbe_variables.scss */
+.graph.ffmpeg-app.hide-VIDEO .edge.VIDEO {
+  display: none;
+}
+
+@keyframes edge-ping-ffmpeg-app-VIDEO {
+  /* line 69, ../../../scss/_nbe_variables.scss */
+  from {
+    box-shadow: 0px 0px 5px 3px #333333, 0px 0px 0px 0px transparent, 4px 4px 4px #202020;
+  }
+
+  /* line 70, ../../../scss/_nbe_variables.scss */
+  20% {
+    box-shadow: 0px 0px 12px 3px #333333, 0px 0px 16px 3px #f5c680, 4px 4px 4px #202020;
+  }
+
+  /* line 71, ../../../scss/_nbe_variables.scss */
+  to {
+    box-shadow: 0px 0px 18px 3px #333333, 0px 0px 24px 3px transparent, 4px 4px 4px #202020;
+  }
+}
+
+@-webkit-keyframes edge-ping-ffmpeg-app-VIDEO {
+  /* line 75, ../../../scss/_nbe_variables.scss */
+  from {
+    box-shadow: 0px 0px 5px 3px #333333, 0px 0px 0px 0px transparent, 4px 4px 4px #202020;
+  }
+
+  /* line 76, ../../../scss/_nbe_variables.scss */
+  20% {
+    box-shadow: 0px 0px 12px 3px #333333, 0px 0px 16px 3px #f5c680, 4px 4px 4px #202020;
+  }
+
+  /* line 77, ../../../scss/_nbe_variables.scss */
+  to {
+    box-shadow: 0px 0px 18px 3px #333333, 0px 0px 24px 3px transparent, 4px 4px 4px #202020;
+  }
+}
+
+/* line 8, ../scss/nbe_ffmpeg.scss */
+h2 {
+  font-family: "Futura", "Helvetica Neue", "Verdana", sans-serif;
+  color: #c8c8c8;
+}
+
+/* line 13, ../scss/nbe_ffmpeg.scss */
+label {
+  position: relative;
+  display: block;
+}
+
+/* line 18, ../scss/nbe_ffmpeg.scss */
+label input {
+  position: absolute;
+  left: 200px;
+}
+
+/* line 23, ../scss/nbe_ffmpeg.scss */
+input, textarea {
+  background: #646464;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  color: #e0e0e0;
+}

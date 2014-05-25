@@ -1,0 +1,27 @@
+{
+   "vertices": {
+      "input": {
+         "label": "input",
+         "ports": [
+            {
+               "id": "0",
+               "label": "X",
+               "type": "VIDEO"
+            }
+         ]
+      },
+      "output": {
+         "label": "output",
+         "ports": [
+            {
+               "id": "0",
+               "label": "X",
+               "direction": "in",
+               "type": "VIDEO"
+            }
+         ]
+      }
+   },
+   "edges": {
+   }
+}

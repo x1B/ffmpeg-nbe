@@ -5,13 +5,18 @@
 
 
 {% block content %}
+
+<script type="text/javascript" src="static/bower_components/requirejs/require.js" data-main="ffmpeg_nbe"></script>
+<script type="text/javascript" src="static/require_config.js"></script>
+
+<div data-ng-include="'/static/templates/ffmpeg_nbe.html'"></div>
+
 <div id="canvas">
 	<p class="render-indicator">rendering</p>
 	<div id="display"></div>
 </div>
 <form action="/upload" id="comp">
 	<input type="file" name="file" id="fileUpload" />
-
 	<input type="submit" value="Render" />
 </form>
 <div id="log"></div>
@@ -19,102 +24,14 @@
 
 
 {% block scripts %}
-<script src="static/scripts/dropzone.js" type="text/javascript"></script>
 <script type="text/javascript">
 var maxFilesize = {{ filesize }},
 	referenceFile,
 	canvas = document.getElementById('canvas'),
-	display = document.getElementById('display'),
-	filterConfig = {
-		"edges": {
-			"video 0": {
-				"label": "video 0",
-				"type": "VIDEO"
-			},
-			"video 1": {
-				"label": "video 1",
-				"type": "VIDEO"
-			}
-		},
-		"vertices": {
-			"input": {
-				"label": "input",
-				"ports": [
-					{
-						"edgeId": "video 0",
-						"id": "0",
-						"label": "X",
-						"type": "VIDEO"
-					}
-				]
-			},
-			"output": {
-				"label": "output",
-				"ports": [
-					{
-						"direction": "in",
-						"edgeId": "video 1",
-						"id": "0",
-						"label": "X",
-						"type": "VIDEO"
-					}
-				]
-			},
-			"v0": {
-				"description": "Blur the input.",
-				"details": {
-					"params": [
-						{
-							"default": "2",
-							"id": "luma_radius",
-							"value": "5"
-						},
-						{
-							"default": "2",
-							"id": "luma_power",
-							"value": "5"
-						},
-						{
-							"id": "chroma_radius",
-							"value": "3"
-						},
-						{
-							"id": "chroma_power",
-							"value": "3"
-						},
-						{
-							"id": "alpha_radius",
-							"value": ""
-						},
-						{
-							"id": "alpha_power"
-						}
-					]
-				},
-				"label": "boxblur",
-				"ports": [
-					{
-						"direction": "in",
-						"edgeId": "video 0",
-						"id": "0",
-						"label": "X",
-						"type": "VIDEO"
-					},
-					{
-						"direction": "out",
-						"edgeId": "video 1",
-						"id": "1",
-						"label": "Y",
-						"type": "VIDEO"
-					}
-				]
-			}
-		}
-	};
+	display = document.getElementById('display');
 
 function log(msg) {
-	var args = arguments,
-		l = document.getElementById('log');
+	var l = document.getElementById('log');
 	for(var i = 0; i < arguments.length; i++) {
 		l.innerHTML += arguments[i];
 	}
@@ -154,7 +71,7 @@ function displayImage(image, view) {
 		viewer.id = 'viewer';
 		viewer.alt = 'Viewer';
 		view.appendChild(viewer);
-	}else {
+	} else {
 		viewer = imgs[0];
 	}
 
@@ -162,6 +79,4 @@ function displayImage(image, view) {
 	return viewer;
 }
 </script>
-<script src="static/scripts/upload.js" type="text/javascript"></script>
-<script src="static/scripts/render.js" type="text/javascript"></script>
 {% end %}

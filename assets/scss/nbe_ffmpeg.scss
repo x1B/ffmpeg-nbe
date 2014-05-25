@@ -1,0 +1,28 @@
+@import '../../../scss/nbe_variables';
+
+@include edgeType( 'ffmpeg-app', 'AUDIO', $typeColor1 );
+@include edgeType( 'ffmpeg-app', 'VIDEO', $typeColor4 );
+
+// Demo specific styles that are not related to nbe:
+
+h2 {
+   font-family: $fontFamilyLabel;
+   color: $gray5;
+}
+
+label {
+  position: relative;
+  display: block;
+}
+
+label input {
+  position: absolute;
+  left: 200px;
+}
+
+input, textarea {
+  background: $gray3;
+  border: 1px solid $gray1;
+  border-radius: 2px;
+  color: $gray6;
+}

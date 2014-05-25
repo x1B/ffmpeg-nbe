@@ -6,10 +6,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>{% block title %}{% end %}</title>
 
-		<link rel="stylesheet" href="static/styles/master.css" 
-			type="text/css" media="screen" charset="utf-8" 
-			title="Default Styles" />
-	</head>
+		<link rel="stylesheet" href="static/styles/master.css" type="text/css" media="screen" charset="utf-8"
+              title="Default Styles" />
+        <link href="static/styles/nbe.css" media="screen, projection" rel="stylesheet" type="text/css">
+        <link href="static/styles/nbe_ffmpeg.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    </head>
 	<body lang="en">
 		<h1>{% block title %}{% end %}</h1>
 		{% block content %}{% end %}

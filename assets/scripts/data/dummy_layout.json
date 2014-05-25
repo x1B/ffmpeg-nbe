@@ -1,0 +1,14 @@
+{
+   "vertices": {
+      "input": {
+         "left": 50,
+         "top": 50
+      },
+      "output": {
+         "left": 550,
+         "top": 200
+      }
+   },
+   "edges": {
+   }
+}
